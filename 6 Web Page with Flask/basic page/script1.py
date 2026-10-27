@@ -26,5 +26,9 @@ def home():
 def about():
     return render_template("about.html")
 
+@app.route('/michelle/')
+def michelle():
+    return render_template("liu.html")
+
 if __name__=="__main__":
     app.run(debug=True)
